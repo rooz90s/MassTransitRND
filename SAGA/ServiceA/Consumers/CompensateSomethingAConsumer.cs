@@ -1,6 +1,14 @@
-﻿namespace ServiceA.Consumers;
+﻿using MassTransit;
+using Shared.TestStateMachine;
 
-public class CompensateSomethingAConsumer
+namespace ServiceA.Consumers;
+
+public class CompensateSomethingAConsumer : IConsumer<CompensateA>
 {
-    
+    public async Task Consume(ConsumeContext<CompensateA> context)
+    {
+        Console.WriteLine(" ! >>>>>>>>  Compensating A ");
+
+        await Task.CompletedTask;
+    }
 }

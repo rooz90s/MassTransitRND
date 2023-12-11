@@ -1,25 +1,35 @@
+using Avro.Shared.Contracts;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Avro.Producer.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class AvroProducerController : ControllerBase
 {
 
+    private readonly ITopicProducer<EventX> _producer;
 
-
-
-
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IActionResult ProduceA()
+    public AvroProducerController(ITopicProducer<EventX> producer)
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        _producer = producer;
+    }
+
+    [HttpPost("ProduceA")]
+    public async Task<IActionResult> ProduceA()
+    {
+        var d = DateTime.Now;
+        
+        await _producer.Produce(new EventX
+        {
+            Title = $"Events",
+            Event = new EventA
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                DataA = $"This Event A in {DateTime.Now}"
+            }
+        });
+
+        return Ok(d);
     }
 }

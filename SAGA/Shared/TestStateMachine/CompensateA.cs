@@ -2,5 +2,5 @@
 
 public class CompensateA
 {
-    
+    public Guid CorId { get; set; }
 }
