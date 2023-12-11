@@ -1,0 +1,74 @@
+﻿{
+  "namespace": "Avro.Shared",
+  "type": "record",
+  "name": "EventX",
+  
+  "fields": [
+
+    {
+
+      "name": "Title",
+      "displayName": "Title",
+      "maxLength": 100,
+      "type": {
+        "type": "string"
+      }
+      
+    },
+
+    {
+
+      "name": "Event",
+      "displayName": "Event",
+      "type": [
+
+        {
+          "type": "record",
+          "namespace": "Avro.Shared",
+          "name": "EventA",
+          "displayName": "EventA",
+          "fields": [
+
+            {
+
+              "name": "DataA",
+              "displayName": "DataA",
+              "maxLength": 100,
+              "type": {
+                "type": "string"
+              }
+
+            }
+          ]
+        },
+
+        {
+          "type": "record",
+          "namespace": "Avro.Shared",
+          "name": "EventB",
+          "displayName": "EventB",
+          "fields": [
+
+            {
+
+              "name": "DataB",
+              "displayName": "DataB",
+              "maxLength": 100,
+              "type": {
+                "type": "string"
+              }
+
+            }
+          ]
+        },
+        
+      ]
+
+    },
+    
+    
+    
+    
+  ]
+
+}

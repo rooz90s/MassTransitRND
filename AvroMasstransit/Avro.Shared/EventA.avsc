@@ -1,0 +1,19 @@
+﻿{
+  "type": "record",
+  "namespace": "Avro.Shared",
+  "name": "EventA",
+  "displayName": "EventA",
+  "fields": [
+
+    {
+
+      "name": "DataA",
+      "displayName": "DataA",
+      "maxLength": 100,
+      "type": {
+        "type": "string"
+      }
+
+    }
+  ]
+}

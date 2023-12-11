@@ -1,0 +1,12 @@
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\bin\Debug\net6.0\Avro.Shared.deps.json
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\bin\Debug\net6.0\Avro.Shared.dll
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\bin\Debug\net6.0\Avro.Shared.pdb
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.csproj.AssemblyReference.cache
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.AssemblyInfoInputs.cache
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.AssemblyInfo.cs
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.csproj.CoreCompileInputs.cache
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.dll
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\refint\Avro.Shared.dll
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\Avro.Shared.pdb
+G:\Projects\MassTransitRND\AvroMasstransit\Avro.Shared\obj\Debug\net6.0\ref\Avro.Shared.dll
